@@ -33,6 +33,15 @@
             </p>
         </section>
     </main>
+    <br>
+    <hr>
+    <br>
+    <form action="/hashtags/add" method="POST">
+        <label for="name">New Hashtag:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="hidden" id="id" name="id" th:value="${post.id}">
+        <input type="submit" value="Submit">
+    </form>
 </div>
 
 </body>
